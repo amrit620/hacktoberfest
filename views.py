@@ -26,4 +26,7 @@ def user_reg(request):
 
 
 def user_login(request):
-	return render(request,'login.html')
+	context = {
+		'data':'no data';
+	}
+	return render(request,'login.html',context)
