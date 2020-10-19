@@ -5,5 +5,6 @@ message = pg.prompt('What message you wanna send ?','Automate messaging','Type m
 message_count =  pg.prompt('How many messages you wanna send ?', 'Automate messaging','')
 for i in range(int(message_count)):
 	pg.typewrite(message)
+	time.sleep(1)
 	pg.press('enter')
-	print(message, i)
+	
